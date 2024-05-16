@@ -11,9 +11,9 @@ class Ns_Followers:
         self.requests=requests
         self.__AES_NoPadding = AES_CBC_NoPadding()
 
-        self.__userid='...' #Enter UserID Here
-        self.__username='...' #Enter UserName Here
-        self._session='...' #Enter SessionID Here
+        self.__userid='64708625410' #Enter UserID Here
+        self.__username='dvd66124' #Enter UserName Here
+        self._session='datr=RYgeZj5uKsJmxaIeVh96m0f8; ig_did=D5AB41D1-F143-46FE-9522-233518725541; ig_nrcb=1; ps_n=1; ps_l=1; mid=Zif2BwAAAAFShE11Tv79auIqVQOt; dpr=0.8999999761581421; ig_did=0C826C21-17C3-444A-ABB7-EBABD37214D7; csrftoken=eWSu8IAs01Zf6mkdogHGTHvedPgoYYy0; ds_user_id=64708625410; sessionid=64708625410%3ATiDTebtyIIKE2K%3A5%3AAYddxTGIOpzqThwqttiLfo2ikrkFIQzJg9BBy1ENiQ; shbid="15009\05464708625410\0541747393703:01f7e02183b7327ab586ce3e13420e48f3dafbe0217307b4b00817cac1b65de6a4437c7c"; shbts="1715857703\05464708625410\0541747393703:01f7142ee9950122aba4501a096227ba0c4273c7e49419c363ce50eb3d44cd417971dca9"; wd=481x1045; rur="LLA\05464708625410\0541747395992:01f75ebfc2ce4bcb16fbb2a6677b8ad8f00c12f3668219f1b111842d2a011375be657685"' #Enter SessionID Here
 
         self.__Pk=self.__userid.encode()+b'*'+str(random.randint(111,999)).encode()
         self.__Ip=os.urandom(8).hex().encode()+b'*'+str(random.randint(111,999)).encode()
