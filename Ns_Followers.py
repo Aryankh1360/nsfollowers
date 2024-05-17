@@ -116,10 +116,10 @@ if __name__ == '__main__':
             if "suggests" in suff.text:
                 for items in suff.json()['suggests']:
                     print(cl.PlaceOrder(items))
-                    time.sleep(random.randint(10,15))
+                    time.sleep(random.randint(0)
             else:
                 print(suff.text)
-                time.sleep(10)
+                time.sleep(0)
         except Exception as E:
             print(E)
-            time.sleep(5)
+            time.sleep(0)
